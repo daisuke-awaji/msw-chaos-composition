@@ -4,8 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "description": "Randomize msw response using msw composition",
-  "author": "daisuke awaji",
+  "author": "Daisuke Awaji <gee.awa@gmail.com> (https://github.com/daisuke-awaji)",
+  "homepage": "https://github.com/daisuke-awaji/msw-chaos-composition",
   "scripts": {
+    "prepare": "tsc",
+    "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
@@ -18,5 +21,9 @@
   },
   "dependencies": {
     "msw": "^0.30.1"
-  }
+  },
+  "keywords": [
+    "msw",
+    "chaos"
+  ]
 }

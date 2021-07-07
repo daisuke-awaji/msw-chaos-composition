@@ -1,7 +1,7 @@
 import { setupServer } from "msw/node";
 import { rest } from "msw";
 import axios from "axios";
-import { createChaosResponse } from "./index";
+import { createChaosResponse } from "../src/index";
 
 const MOCK_API_ENDPOINT = "https://mock.example.com/mock";
 

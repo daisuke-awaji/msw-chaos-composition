@@ -16,6 +16,6 @@
       "webworker"
     ]
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "tests/index.test.ts"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
 }
