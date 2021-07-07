@@ -1,7 +1,7 @@
 # msw-chaos-composition
 
 <p align="center">
-  <img src="media/msw-chaos-composition.png" width="150" alt="Chaos Mock Service Worker logo" />
+  <img src="https://raw.githubusercontent.com/daisuke-awaji/msw-chaos-composition/main/media/msw-chaos-composition.png" width="150" alt="Chaos Mock Service Worker logo" />
 </p>
 
 <p align="center">msw-chaos-composition add chaos into the response of msw.</p>

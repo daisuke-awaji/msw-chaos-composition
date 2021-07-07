@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
     "strict": true,
     "target": "es6",
     "module": "ESNext",
@@ -8,13 +10,7 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "declaration": true,
-    "declarationDir": "lib/types",
-    "lib": [
-      "es2017",
-      "ESNext.AsyncIterable",
-      "dom",
-      "webworker"
-    ]
+    "declarationDir": "./lib/types",
   },
   "include": ["src/**/*.ts", "tests/index.test.ts"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
