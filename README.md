@@ -74,7 +74,7 @@ const errors = [
     rate: 20,
   },
 ];
-const chaosRes = createChaosResponse();
+const chaosRes = createChaosResponse(errors);
 const handler = rest.get("/hello", (req, res, ctx) => {
   return chaosRes(
     ctx.status(200),
