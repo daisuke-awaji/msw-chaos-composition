@@ -1,7 +1,8 @@
 {
   "name": "msw-chaos-composition",
   "version": "1.0.1",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "lib/types/index.d.ts",
   "license": "MIT",
   "description": "Randomize msw response using msw composition",
   "author": "Daisuke Awaji <gee.awa@gmail.com> (https://github.com/daisuke-awaji)",
