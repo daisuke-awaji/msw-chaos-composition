@@ -1,15 +1,21 @@
-# msw-chaos-composition
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/daisuke-awaji/msw-chaos-composition/main/media/msw-chaos-composition.png" width="150" alt="Chaos Mock Service Worker logo" />
 </p>
 
+<h1 align="center">msw-chaos-composition</h1>
+
 <p align="center">msw-chaos-composition add chaos into the response of <a href="https://mswjs.io/">msw</a>.</p>
+
+<p align="center">
+    <a href="https://badge.fury.io/js/msw-chaos-composition" alt="npm version">
+        <img src="https://badge.fury.io/js/msw-chaos-composition.svg" />
+    </a>
+</p>
 
 ## Features
 
-🌪 Randomize Mock Service Worker response <br/>
-⏱ Delay response time
+- **Randomize** Mock Service Worker response 🌪 <br/>
+- **Delay** response time ⌛️
 
 ## Install
 
