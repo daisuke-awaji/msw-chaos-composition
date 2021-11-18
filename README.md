@@ -4,11 +4,24 @@
   <img src="https://raw.githubusercontent.com/daisuke-awaji/msw-chaos-composition/main/media/msw-chaos-composition.png" width="150" alt="Chaos Mock Service Worker logo" />
 </p>
 
-<p align="center">msw-chaos-composition add chaos into the response of msw.</p>
+<p align="center">msw-chaos-composition add chaos into the response of <a href="https://mswjs.io/">msw</a>.</p>
 
 ## Features
 
-- Randomize Mock Service Worker Response
+🌪 Randomize Mock Service Worker response <br/>
+⏱ Delay response time
+
+## Install
+
+```bash
+npm install msw-chaos-composition
+```
+
+or
+
+```bash
+yarn add msw-chaos-composition
+```
 
 ## Usage
 
@@ -23,6 +36,7 @@ const handler = rest.get("/hello", (req, res, ctx) => {
     })
   );
 });
+
 const server = setupServer(handler);
 server.listen();
 ```
@@ -34,6 +48,8 @@ fetch `/hello` then response is `{ status: 200, body: { message: "hello world" }
 Use `chaosRes()` created by `createChaosResponse()`
 
 ```ts
+import { createChaosResponse } from "msw-chaos-composition";
+
 const chaosRes = createChaosResponse();
 const handler = rest.get("/hello", (req, res, ctx) => {
   return chaosRes(
@@ -43,6 +59,7 @@ const handler = rest.get("/hello", (req, res, ctx) => {
     })
   );
 });
+
 const server = setupServer(handler);
 server.listen();
 ```
@@ -74,6 +91,7 @@ const errors = [
     rate: 20,
   },
 ];
+
 const chaosRes = createChaosResponse(errors);
 const handler = rest.get("/hello", (req, res, ctx) => {
   return chaosRes(
@@ -83,6 +101,7 @@ const handler = rest.get("/hello", (req, res, ctx) => {
     })
   );
 });
+
 const server = setupServer(handler);
 server.listen();
 ```
